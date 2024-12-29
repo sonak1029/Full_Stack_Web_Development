@@ -2,7 +2,6 @@
 
 #outer-box{
     background-color: purple;
-    padding: 10px;
 }
 
 .box{
@@ -16,8 +15,8 @@
 
 p{
     color: yellow;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .white-text{
