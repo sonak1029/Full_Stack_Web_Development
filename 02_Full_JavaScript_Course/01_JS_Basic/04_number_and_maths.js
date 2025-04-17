@@ -38,6 +38,16 @@ const n = 500;
 
 // console.log(3 ** 4);
 
-console.log(Math.random());
+// console.log(Math.random());
 // console.log(Math.floor(Math.random() * 10 + 1));
-console.log((Math.random() * 10) + 1);
+// console.log((Math.random() * 10) + 1);
+
+const min = 5;
+const max = 10;
+
+// console.log(Math.round(Math.random()));
+// console.log(Math.random());
+// console.log(Math.floor(Math.random() * 10 + 1));
+// console.log(Math.floor(Math.random() * 10) + 1);
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
