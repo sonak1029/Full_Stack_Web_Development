@@ -80,21 +80,98 @@ const regularUser = {
 // Let's combine 2 object
 const obj1 = {
     1: "sonak",
-    2: "Rupa",
-    3: "monu",
-    4: "sumit"
+    2: "Rupa"
 };
 
 
 const obj2 = {
-    5: "Sonu",
-    6: "Ram",
-    7: "Shyam",
-    8: "Rupali"
+    3: "Sonu",
+    4: "Ram"
+};
+
+
+const obj3 = {
+    5: "Mohan",
+    6: "John Snow"
+};
+
+
+const obj4 = {
+    7: "Mick",
+    8: "Rohit"
 };
 
 // const joinTwoObjecs = {obj1, obj2};
 // const joinTwoObjecs = Object.assign(obj1, obj2);
-const joinTwoObjecs = Object.assign({}, obj1, obj2);
+// const joinTwoObjecs = Object.assign({}, obj1, obj2, obj3, obj4);
 
-console.log(joinTwoObjecs);
+// console.log(joinTwoObjecs);
+
+
+// Mostly we can use spread 
+const joinTwoObjecs = {...obj1, ...obj2, ...obj3, ...obj4};
+// console.log(joinTwoObjecs);
+
+
+// Database sa jab bhe value aayage to array of object aayage ok
+const user1 = [
+    {
+        name: "Sonak",
+        id: 2451,
+        email: "abcd@gmail.com",
+        location: "Bangalore"
+    },
+
+    {
+        name: "Rupa",
+        id: 2452,
+        email: "efgh@gmail.com",
+        location: "New York"
+    },
+
+    {
+        name: "John Show",
+        id: 2453,
+        email: "ijkl@gmail.com",
+        location: "England"
+    }
+]
+
+
+// Now how to Access value
+// console.log(user1[1].name);
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isLogedIn'));
+
+
+
+// Object Part 3
+
+// Array De-Structuring
+const arr = [10, 20, 30];
+
+const [a, b, c] = arr;
+
+// console.log(a); // 10
+// console.log(b); // 20
+// console.log(c); // 30
+
+
+// Object ke De-Structuring
+const person = { name: 'Rahul', age: 25 };
+
+const { name, age } = person;
+
+// console.log(name); // Rahul
+// console.log(age);  // 25
+
+const course = {
+    courseName: "Js in hindi",
+    price: 999,
+    courseInstructor: "Angela Yu"
+}
+
+const {courseInstructor: instructor} = course;
+
+console.log(instructor);
