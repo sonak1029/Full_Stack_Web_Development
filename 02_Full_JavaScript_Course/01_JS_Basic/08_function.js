@@ -47,4 +47,43 @@ function userLoggedIn(usename){
 
 }
 
-console.log(userLoggedIn("Sonak"));
+// console.log(userLoggedIn("Sonak"));
+
+
+
+// Function part 2
+function calculateCarPrice(val1, val2, ...num1){
+    return num1;
+}
+
+// console.log(calculateCarPrice(60, 200, 600, 2000));
+
+const car = {
+    name: "Rolls-Royce",
+    carNumber: "IND-33c456",
+    prices: 900000
+}
+
+function handanObject(anyobject){
+    console.log(`Car name is ${anyobject.name} and car number is ${anyobject.carNumber} and the price is ${anyobject.price}`);
+}
+
+
+// handanObject(car);
+
+// Here we pass object and value is change
+// handanObject({
+//     name: "Rolls_Royce",
+//     carNumber: "IND-33d678",
+//     price: 156000
+// });
+
+
+const arr = [10, 20, 30, 40, 50];
+
+
+function printArray(getValue){
+    return arr;
+}
+
+console.log(printArray());
