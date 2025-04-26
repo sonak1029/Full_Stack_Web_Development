@@ -8,7 +8,7 @@ const repoCount = 50;
 const gameName = new String("pro-gra-mmi-ng");
 
 // console.log(gameName);
-console.log(gameName[0]);
+// console.log(gameName[0]);
 
 // This all are the methods
 // console.log(gameName.length);
@@ -21,8 +21,12 @@ console.log(gameName[0]);
 // console.log(gameName.indexOf('m'));
 
 
-const newString = gameName.substring(-8, 6);
+// const newString = gameName.substring(-3, 6); // -3 ko wo automatically 0 me convert kar daga ok
+// const check = gameName.substring(8, 5); // yaha par start > end h ot wo swap ho jayaga means see this example (8, 5) it become (5, 8) ok
+// console.log(check);
 // console.log(newString);
+
+
 
 // That is the working part of slice
 /*
@@ -32,7 +36,7 @@ const newString = gameName.substring(-8, 6);
 */
 
 
-const anotherString = gameName.slice(-8, 5);
+const anotherString = gameName.slice(-14, 3); // yaha par 3 sa phele jo bhe value h usko print karga like (n-1) ok
 // console.log(anotherString);
 
 // this one is only work when user give lot's of white space

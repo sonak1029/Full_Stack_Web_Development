@@ -8,12 +8,15 @@ const balance = new Number(100);
 
 // console.log(balance.toString().length);
 // console.log(typeof balance);
-// console.log(typeof balance);
 // console.log(balance.toFixed(2));
 
 const anotherNumber = 28.8663398339;
 
 // console.log(anotherNumber.toFixed(1));
+
+/*  ➡️ toPrecision() ek JavaScript method hai jo number ko ek fixed total digits ke format mein return karta hai.
+Total digits ka count fix karta hai (including before and after decimal). range h 1 - 21 me bich me ok
+Result string mein milta hai. */
 // console.log(anotherNumber.toPrecision(3));
 
 const hundreds = 1000000;
@@ -28,7 +31,7 @@ const n = 500;
 
 // console.log(Math);
 // console.log(Math.abs(-4)); // if user give me - value soo i will use abs to convert in positive number
-// console.log(Math.floor(398.03));
+// console.log(Math.floor(398.98));
 // console.log(Math.round(4.598));
 // console.log(Math.ceil(4.1)); // thoda sa bhe 4 sa bada hua to wo uska agla number daga
 // console.log(Math.random());
