@@ -9,6 +9,13 @@
 */
 
 /*
+******************** JavaScript ***********************
+in simple language : JavaScript is a web language that can modify HTML, CSS, and handle data.
+
+1. Javascript is a programming languagle of the web
+2. it can update and change both html and css
+3. it can calculate, manipulate and validate the data
+
 JavaScript --> Javascript is a synchronous single-threaded language
 */
 
@@ -37,10 +44,30 @@ var squre4 = squre(4);
 
 
 var a;
-console.log(a);
+// console.log(a);
 
-if(a === undefined){
-    console.log("a is undefind");
-}else{
-    console.log("a is not undefind");
-}
+// if(a === undefined){
+//     console.log("a is undefind");
+// }else{
+//     console.log("a is not undefind");
+// }
+
+
+
+
+
+// *********************************** VARIABLES ****************************************
+// Q1
+// x stores the value 5
+// y stores the value 6
+// z stores the value 11
+
+let x = 5;
+var y = 6;
+const z = x + y;
+
+console.log(z);
+
+
+// ****** NOTE ********
+// Variables are containers for storing values.
