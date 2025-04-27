@@ -4,8 +4,8 @@ let num = [10, 20, 30, 40, 50];
 
 // That is the another onption to create an array
 let myArr = new Array(1, 2, 3, 4, 5);
-console.log(myArr);
-console.log(typeof myArr);
+// console.log(myArr);
+// console.log(typeof myArr);
 // console.log(`${myArr}`);
 
 // console.log(str);
@@ -34,14 +34,14 @@ num.shift();
 
 
 // slice and splice
-// const a = str.slice(1, 4);
+const a = str.slice(1, 3); // yaha par bas wo jo bhe number diya h last me usko include nahi karaga (n-1)
 // console.log(a);
 
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 // console.log(fruits);
 
 
-// const c = fruits.slice(0, 3);
+const c = fruits.slice(0, 3);
 // console.log(c);
 // console.log(fruits);
 
@@ -49,9 +49,9 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 // console.log("\n");
 
 
-// const d = fruits.splice(3);
-// console.log(d);
-// console.log(fruits);
+const d = fruits.splice(3);
+console.log(d);
+console.log(fruits);
 
 
 
@@ -97,4 +97,4 @@ let score1 = 100;
 let score2 = 200;
 let score3 = 300;
 
-console.log(Array.of(score1, score2, score3)); // ya bhe ek tarika h array ka ander value ko insert karna ka
+// console.log(Array.of(score1, score2, score3)); // ya bhe ek tarika h array ka ander value ko insert karna ka

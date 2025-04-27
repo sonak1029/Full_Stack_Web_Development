@@ -1,23 +1,38 @@
+// Primitive datatype
+
+// 7 Types : string, number, boolearn, undefiend, null, symbol, BigInt
+
+// Reference (Non-Primitive)
+
+// Array, Object, function ..etc
+
+
+
 // Stack (Primitive), Heap (Non-Primitive)
-let myYoutubeName = "SoankJha#455554u434932890";
+let myYoutubeName = "Tony";
 
 let anotherName = myYoutubeName;
 
-anotherName = "RichaMishra3940393";
+anotherName = "Jhow";
 
 // console.log(anotherName);
+// console.log(myYoutubeName);
 
 let userOne = {
-    email: "user@gmail.com",
-    upi: "user@ybl"
+    email: "userOne@gmail.com",
+    upi: "userOne@ybl"
 };
 
 let userTwo = userOne;
 
-// console.log(userOne);
-// console.log(userTwo);
+console.log(userOne);
+console.log(userTwo);
 
-userTwo.email = "user@33gmail.com";
+userTwo.email = "userTwo@33gmail.com";
+userTwo.upi = "userTwo@ybl"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(`This is for userOne : ${userOne.email}`);
+console.log(`This is for userOne : ${userOne.upi}`);
+console.log("\n");
+console.log(`This is for userTwo : ${userTwo.email}`);
+console.log(`This is for userTwo : ${userTwo.upi}`);
