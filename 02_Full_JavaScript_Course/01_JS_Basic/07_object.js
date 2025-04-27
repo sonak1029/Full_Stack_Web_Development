@@ -139,7 +139,9 @@ const user1 = [
 
 
 // Now how to Access value
-// console.log(user1[1].name);
+console.log(user1[0].name);
+console.log(user1[1].name);
+console.log(user1[2].name)
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 // console.log(tinderUser.hasOwnProperty('isLogedIn'));
