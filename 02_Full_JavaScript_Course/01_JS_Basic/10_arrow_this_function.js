@@ -25,7 +25,7 @@ const user = {
 
 // const show = function(){
 //     let username = "Tony";
-//     console.log(this.username) // ya undefined daga
+//     console.log(this.username) // ya undefined daga kyuki ham is tara this ko use nahi kar sakte h function object me he use hoga ok
 //     console.log(this); // or ya globle objects 
 // }
 

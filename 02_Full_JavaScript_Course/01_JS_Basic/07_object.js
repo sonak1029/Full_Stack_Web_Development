@@ -139,9 +139,9 @@ const user1 = [
 
 
 // Now how to Access value
-console.log(user1[0].name);
-console.log(user1[1].name);
-console.log(user1[2].name)
+// console.log(user1[0].name);
+// console.log(user1[1].name);
+// console.log(user1[2].name)
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 // console.log(tinderUser.hasOwnProperty('isLogedIn'));
@@ -149,6 +149,18 @@ console.log(user1[2].name)
 
 
 // Object Part 3
+// Object ke De-Structuring
+const person = {
+    name: "Jhon",
+    age: 25,
+    city: "Delhi"
+}
+
+// Aise karte h object ke de_structuring 
+const {name, age, city} = person;
+
+console.log(` Name : ${name} \n Age : ${age} \n City : ${city}`);
+
 
 // Array De-Structuring
 const arr = [10, 20, 30];
@@ -159,14 +171,6 @@ const [a, b, c] = arr;
 // console.log(b); // 20
 // console.log(c); // 30
 
-
-// Object ke De-Structuring
-const person = { name: 'Rahul', age: 25 };
-
-const { name, age } = person;
-
-// console.log(name); // Rahul
-// console.log(age);  // 25
 
 const course = {
     courseName: "Js in hindi",

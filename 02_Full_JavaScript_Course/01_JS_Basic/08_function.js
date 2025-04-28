@@ -27,7 +27,7 @@ function sayHello(){
 
 // sayHello();
 
-// Add to number
+// Add to number ja jo hamne addTwoNumber ka ander variable pass kiya  h isko parameter bote h ok
 function addTwoNumber(number1, number2){
     // console.log(number1 + number2);
     return number1 + number2;
@@ -72,11 +72,11 @@ function handanObject(anyobject){
 // handanObject(car);
 
 // Here we pass object and value is change
-// handanObject({
-//     name: "Rolls_Royce",
-//     carNumber: "IND-33d678",
-//     price: 156000
-// });
+handanObject({
+    name: "Rolls_Royce",
+    carNumber: "IND-33d678",
+    price: 156000
+});
 
 
 const arr = [10, 20, 30, 40, 50];
@@ -86,4 +86,4 @@ function printArray(getValue){
     return arr;
 }
 
-console.log(printArray());
+// console.log(printArray());
