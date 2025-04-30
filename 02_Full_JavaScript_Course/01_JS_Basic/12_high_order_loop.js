@@ -86,5 +86,40 @@ const coding = ["javascript", "c++", "ruby", "python", "swift"];
 
 // Now ab arraw function ke help sa ok
 coding.forEach( (item) => {
+    // console.log(item);
+} )
+
+
+coding.forEach( (value, index, arr) => {
+    // console.log(value, index, arr);
+} );
+
+
+// We can also use like this
+function printarr(item){
     console.log(item);
+}
+
+// coding.forEach(printarr);
+
+// now here we put object in array
+const myyCoding = [
+    {
+        language: "javascript",
+        languageFileName: "js"
+    },
+
+    {
+        language: "java",
+        languageFileName: "java"
+    },
+
+    {
+        language: "cpp",
+        languageFileName: "c++"
+    }
+]
+
+myyCoding.forEach( (item) => {
+    console.log(item.language);
 } )
