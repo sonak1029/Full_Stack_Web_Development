@@ -24,11 +24,11 @@ const myNum = [23, 87, 15, 62, 39, 45, 20, 58, 41, 37];
 // console.log(newNum);
 
 
-const newNums = [];
+const newNum = [];
 
 myNum.forEach( (num) => {
     if(num > 35){
-        newNums.push(num);
+        newNum.push(num);
     }
 } )
 
@@ -110,6 +110,78 @@ const books = [
 ]
 
 
-const userBooks = books.filter( (bk) => bk.genre === "Self-help" );
+// const userBooks = books.filter( (bk) => bk.genre === "Self-help" );
 
-console.log(userBooks);
+const userBooks = books.filter( (bk) => {
+  return bk.publish >= 2015 && bk.genre === "Programming"
+} );
+
+// console.log(userBooks);
+
+
+const myNumber = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+// const addNum = myNumber.map( (num) => num * 10 )
+
+// console.log(addNum);
+
+// Channing
+const addNum = myNumber
+    .map( (num) => num * 10 )
+    .map( (num) => num + 5 )
+    .filter( (num) => num >= (Math.pow(2, 8)) )
+
+
+// console.log(addNum);
+
+
+// Here we learn reduce methode ok
+// const ininitialValue = 0;
+
+// That is the first option to do this
+// const myTotal = myNumber.reduce( 
+//   (accumulator, currentValue) => accumulator + currentValue, ininitialValue 
+// )
+
+
+// Second option is this also convert in arrow function it your choice
+// const myTotal = myNumber.reduce( function (accumulator, currentValue){
+//   console.log(`accumulator: ${accumulator} and currentValue: ${currentValue}`);
+//   return accumulator + currentValue;
+// }, 0 )
+
+// console.log(myTotal);
+
+
+const shoppingCart = [
+  {
+    courseName: "Js Course",
+    price: 2999
+  },
+  
+  {
+    courseName: "Java Course",
+    price: 4555
+  },
+
+  {
+    courseName: "Python Course",
+    price: 999
+  },
+
+  {
+    courseName: "mobile dev Course",
+    price: 5999
+  },
+
+  {
+    courseName: "data science Course",
+    price: 12999
+  },
+
+]
+
+
+// My Task is to add all the price and give me the total of all values
+const addvalue = shoppingCart.reduce( (accumulator, item) => accumulator + item.price, 0 );
+// console.log(addvalue);
