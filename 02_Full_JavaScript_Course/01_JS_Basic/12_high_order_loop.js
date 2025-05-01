@@ -79,10 +79,16 @@ for (const key in myObj) {
 
 const coding = ["javascript", "c++", "ruby", "python", "swift"];
 
+for(const key in coding){
+    // console.log(key, ":-", coding[key]); // for in loop is work for array
+}
+
 // Mostly we foreach loop
 // coding.forEach( function (item) { // yaha function ka ander nam isliya nahi h kyuki ya ek callback function h isliya 
 //     console.log(item);
 // } );
+
+
 
 // Now ab arraw function ke help sa ok
 coding.forEach( (item) => {
@@ -102,7 +108,7 @@ function printarr(item){
 
 // coding.forEach(printarr);
 
-// now here we put object in array
+// now here we put array in object
 const myyCoding = [
     {
         language: "javascript",
@@ -120,6 +126,8 @@ const myyCoding = [
     }
 ]
 
+
+// Iterating over an array of objects
 myyCoding.forEach( (item) => {
-    console.log(item.language);
+    // console.log(item.language); // Now we can say that we can iterate over an array of objects like this
 } )
